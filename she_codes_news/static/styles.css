@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
 
 body {
-    background-color: rgb(240, 239, 239);
+    background-color: lightblue;
 }
 
 header {
@@ -51,4 +51,13 @@ a {
 
 a, p {
     font-family: monospace;
+}
+
+form {
+    color: purple; 
+    background-color: lightgreen; 
+}
+
+.inputbox {
+    background-color: salmon; 
 }
