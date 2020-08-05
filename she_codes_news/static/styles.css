@@ -54,10 +54,33 @@ a, p {
 }
 
 form {
+    display: flex; 
+    flex-direction: column; 
+    max-width: 70%; 
+    margin: auto; 
+}
+
+form p {
+    display: flex; 
+}
+
+form label {
+    flex-basis: 20%; 
+}
+
+form p input, form p textarea {
+    flex-basis: 80%; 
+}
+
+#id_pub_date_0, #id_pub_date_1 {
+    flex-basis: 40%; 
+}
+
+form {
     color: purple; 
-    background-color: lightgreen; 
+    background-color: lightgray; 
 }
 
 .inputbox {
-    background-color: salmon; 
+    background-color: lavender; 
 }
