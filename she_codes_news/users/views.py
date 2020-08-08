@@ -3,6 +3,7 @@ from django.views.generic.edit import CreateView
 from django.views import generic
 from .models import CustomUser
 from .forms import CustomUserCreationForm
+from news.models import NewsStory
 
 
 class CreateAccountView(CreateView):
@@ -14,3 +15,7 @@ class CreateAccountView(CreateView):
 # Create your views here.
 class UserProfileView(generic.TemplateView):
     template_name = 'users/profile.html'
+
+
+class AuthorView(generic.DetailView):
+    model = CustomUser
