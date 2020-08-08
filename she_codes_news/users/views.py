@@ -13,8 +13,8 @@ class CreateAccountView(CreateView):
 
 
 # Create your views here.
-class UserProfileView(generic.TemplateView):
-    template_name = 'users/profile.html'
+# class UserProfileView(generic.TemplateView):
+#     template_name = 'users/profile.html'
 
 
 class AuthorView(generic.DetailView):
