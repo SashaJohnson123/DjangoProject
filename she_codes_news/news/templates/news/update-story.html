@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %} 
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<div id="story-wrapper">
+    <h2>Are you sure you want to update this story?{{ story.title }}</h2>
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{} form.as_p }}
+    <input type= "submit" value="update">
+</form>
+</div>
+{% endblock %}
